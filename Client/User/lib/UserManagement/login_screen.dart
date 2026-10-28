@@ -251,7 +251,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.w700,
-                      color: AppColors.primary,
+                      color: AppColors.secondary,
                     ),
                   ),
                   TextSpan(
@@ -259,7 +259,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.w700,
-                      color: AppColors.primary,
+                      color: AppColors.secondary,
                     ),
                   ),
                   TextSpan(
