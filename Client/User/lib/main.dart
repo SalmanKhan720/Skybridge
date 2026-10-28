@@ -19,7 +19,7 @@ import "Buyer/add_product_info.dart";
 import 'UserManagement/splash_screen.dart';
 import 'UserManagement/login_screen.dart';
 import 'UserManagement/profile_gate.dart';
-import 'UserManagement/timer_screen.dart';
+
 import 'UserManagement/forgot_password.dart';
 import 'UserManagement/verification.dart';
 
@@ -83,9 +83,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: kIsWeb
-          ? (isStripe ? const StripeGate() : const SplashScreen())
-          : const TimerScreen(),
+ home: kIsWeb
+    ? (isStripe ? const StripeGate() : const SplashScreen())
+    : const SplashScreen(),
       onGenerateRoute: (settings) {
         final routeName = settings.name ?? '';
         final routePath =
@@ -122,7 +122,6 @@ class MyApp extends StatelessWidget {
         '/add_trip_info': (context) => const TripCreateScreen(),
         '/forgotPassword': (context) => const ForgotPasswordScreen(),
         '/verification': (context) => const VerifyEmailScreen(),
-        '/TimerScreen': (context) => const TimerScreen(),
         '/ProductDashboard': (context) => const ProductDashboard(),
         '/ShippingForm': (context) => const ShippingFormScreen(),
         '/shipmentDetails': (context) => const ShipmentDetailsScreen(),

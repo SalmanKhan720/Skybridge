@@ -193,7 +193,7 @@ class _CustomInputFieldState extends State<CustomInputField> {
                   });
                 },
                 child: DropdownButtonFormField<String>(
-                  value: widget.hasError ? null : widget.value,
+                  initialValue: widget.hasError ? null : widget.value,
                   items: widget.categoryItems,
                   onChanged: (val) {
                     setState(() {

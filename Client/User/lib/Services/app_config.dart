@@ -7,7 +7,7 @@ const String _apiBaseUrlFromEnv = String.fromEnvironment('API_BASE_URL');
 
 const String _localWebBackend = 'http://localhost:5000/api';
 
-const String _mobileWifiBackend = 'http://10.102.164.216:5000/api';
+const String _mobileWifiBackend = 'http://192.168.2.5:5000/api';
 
 
 // const String _mobileWifiBackend = 'http://10.41.146.216:5000/api';
